@@ -1,5 +1,10 @@
 const express = require('express')
 const app = express()
+
+const ApiController = require('./api_app');
+
+app.use('/api', ApiController)
+
 const port = 3000
 const SinhVienModel = require('./SinhVienModel');
 
